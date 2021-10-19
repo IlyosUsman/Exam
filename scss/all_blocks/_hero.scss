@@ -1,0 +1,121 @@
+.hero{
+    background-image: url(../img/img-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // &__wrapper{
+    //     width: 1120px;
+    //     padding: 0 10px;
+    //     margin: 0 auto;
+    //     padding-left: 10px;
+    //     padding-top: 150px;
+    //     padding-bottom: 152px;
+    // }
+
+    &__text{
+        font-family: Space Mono;
+        font-weight: 700;    
+        font-size: 56px;
+        line-height: 56px;
+        color: #FFFFFF;
+        width: 515px;
+        margin: 0;
+        padding-top: 153px;
+        margin-bottom: 40px;
+        
+    }
+
+    &__box{
+        padding-left: 95px;
+    }
+
+    &__subtitle{
+        position: relative;
+        font-family: Lexend Deca;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        width: 405px;
+        color: #FFFFFF;
+        margin: 0;
+        margin-bottom: 40px;
+        
+
+        &::before{
+            content: "";
+            position: absolute;
+            background-image: url(../img/hero-berofe.png);
+            background-repeat: no-repeat;
+            background-size: 504px 15px;
+            width: 202px;
+            height: 15px;
+            top: 40px;
+            left: -255px;
+        }
+        
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url(../img/hero-after.png);
+            background-repeat: no-repeat;
+            width: 465px;
+            height: 155px;
+            top: 40px;
+            left: 110%;
+        }
+        
+    }
+}
+.link-button{
+    margin-bottom: 152px;
+}
+
+@media only screen and (max-width: 768px){
+    .hero {
+        width: 768px;
+        background-image: url("../img/scooter-2.jpg");
+    }
+    
+    
+    .hero__wrapper {
+        max-width: 620px;
+        padding-top: 137px;
+    }
+    
+    .hero__header {
+        width: 573px;
+        margin-bottom: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .hero__text {
+        text-align: center;
+        margin-bottom: 32px;
+        margin-top: -150px;
+    }
+    
+    .hero__text::before {
+        display: none;
+    }
+    
+    .hero__text::after {
+        height: 128px;
+        top: 250%;
+        left: -50%;
+        background-size: contain;
+    }
+    
+    .hero__wrapper .button {
+        margin-left: auto;
+        margin-right: authero;
+    }
+    .hero__subtitle::before{
+        background-image: none;
+    }
+    .hero__subtitle::after{
+        left: -101%;
+        top: 179px;
+    }
+}

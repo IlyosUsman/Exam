@@ -1,0 +1,111 @@
+.steps{
+
+    &__line{
+        top: 100px;
+        left: -18%;
+        display: block;
+        position: relative;
+        max-width: 980px;
+        width: 100%;
+        border: 10px solid #E5ECF4;
+        background-color: #E5ECF4;
+    
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../img/phone.png);
+        background-size: 38px 47px;
+        background-color: #FCB72B;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-size: 40px;
+        display: flex;
+        width: 100%;
+        max-width: 96px;
+        height: 96px;border-radius: 50%;
+        transform: translate(-50%, -50%);
+        left: 20%;
+    }
+
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../img/people-scooter.png);
+        background-size: 40px 40px;
+        background-color: #FCB72B;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        width: 100%;
+        max-width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        top: 0;
+        right: 0;
+        transform: translate(50%, -50%);
+        left: 89%;
+    }
+
+    }
+
+    &__box{
+        margin-top: 95px;
+        margin-left: 60px;
+    }
+
+    &__sub-line{
+        content: "";
+        position: absolute;
+        background-image: url(../../img/scooter.png);
+        background-size: 42px 31px;
+        background-color: #FCB72B; 
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        width: 100%;
+        max-width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        top: 0;
+        right: 30%;
+        transform: translate(50%, -50%);
+        left: 49%;
+        
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 150px;
+        list-style-type: none;
+    }
+    &__item{
+        width: 305px;
+        height: 100px;
+    }
+    &__title{
+        font-family: Space Mono;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #495567;
+    }
+    &__subtitle{    
+        font-family: Lexend Deca;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+}
+@media screen and (max-width:768px) {
+    .steps__line{
+       transform: rotate(90deg);
+       left: -40%;
+       top: 182px;
+
+   }
+   .steps__list{
+       flex-direction: column;
+   }
+}
